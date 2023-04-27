@@ -34,4 +34,8 @@ Notre modele a atteint des perfomances de prediction impressionnantes ou, dans l
 Nous esperons que ce projet constituera la base pour les futurs projets traitant de la langue des signes.
 
 ## Contributeurs
-Tous les contributeurs @seriamedard, @
+<a href = "https://github.com/seriamedard/american_sign_language_recognition/contributors">
+  <img src = "https://contrib.rocks/image?repo = seriamedard/american_sign_language_recognition"/>
+</a>
+
+Made with [contributors-img](https://contrib.rocks).
