@@ -15,6 +15,9 @@ Les donnees utulisees proviennent de [Kaggle](https://www.kaggle.com/datasets/gr
 
 - **Modeles**
 Nous avons utilise l'implementation du Resnet50V2 pour former notre modele a partir de Zero sur le dataset, puis nous l'avons comparee au modele preforme a adapter a notre tache ( apprentissage par transfert)
+### Pile de technologie
+- Python, notebook
+- Tensorflow, Keras, OpenCV
 
 ## Resultats
 Apres avoir forme les modeles , nous obtenues les resultats suivants. 
@@ -29,3 +32,6 @@ Notre modele a atteint des perfomances de prediction impressionnantes ou, dans l
 - Les projets impliquant des images peuvent etre fortement affectes par de nombreux facteurs tels que la distance de l'objet (la main dans ce projet) et la resolution/luminoisite de l'image capturee a partir de la video en direct. Afin de gerer les facteurs comme les objets se trouvant dans l'image affectant la prediction, nous conseillons de combiner ce modele avec un modele de detection d'objets comme **YOLO**
 
 Nous esperons que ce projet constituera la base pour les futurs projets traitant de la langue des signes.
+
+## Contributeurs
+Tous les contributeurs @seriamedard, @
