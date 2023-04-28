@@ -8,8 +8,9 @@ Nous constatons que l'intelligence artificielle existe pour aider à résoudre d
 - Obtenir une performance globale permettant la prediction en temps réel et qui distingue les gestes similaires tels que "A" avec "E", "M" et "S";
 - Comparer l'apprentissage à partir de Zéro et l'apprentissage par transfert.
 
-## Methodologie
+## Méthodologie
 Nous avons développé notre modèle avec **python** en utilisant la bibliothèque **Keras** et démontrer en temps réel avec **OpenCv.**
+
 - **Dataset**
 Les données utilisés proviennent de [Kaggle](https://www.kaggle.com/datasets/grassknoted/asl-alphabet), ce sont **87 000** images de taille **200 x 200** que nous avons redimensionnées à (64 x 64) pour un compromis avec la puissance de calcul que l'on dispose.
 <img src = "./figure/dataset.jpg"/>
@@ -21,10 +22,10 @@ Nous avons utilisé l'implementation du Resnet50V2 pour former notre modèle à 
 - Python, notebook
 - Tensorflow, Keras, OpenCV
 
-## Resultats
+## Résultats
 Après avoir formé les modèles, nous obtenues les résultats suivants.
 
-### Entrainement a partir de Zero
+### Entrainement à partir de Zero
 <img src = "./figure/zero-precision.png"/>
 Nous avons obtenu un **f1-score** de **92 %** sur 50 epochs, en entrainant notre modèle à partir de zéro.
 
@@ -34,7 +35,7 @@ Nous observons une croissance exponentielle de la précision au début de la for
 Nous avons obtenu globalement un **f1-score** de **97 %** . Nous acceptons ce modele car sa performance est grandement significative ( > **95 %**)
 Il est donc évident qu'utiliser l'apprentissage par transfert présente des avantages en gain de temps et l'amélioration de la performance.
 
-### Predictions en temps reel
+### Predictions en temps réel
 Notre modèle a atteint des performances de prediction impressionnantes où, dans la plupart des cas, des predictions précises ont été faites et soutenues par un taux de confiance significative (> **90 %**). Il faut noter que le modèle à réussi a distingué même les gestes les plus similaires tels que "A" avec "E" et "S", "U" avec "V" et "W"
 
 <img src = "./figure/prediction-a.png"/>
