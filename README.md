@@ -1,7 +1,7 @@
 # Reconnaissance de l'alphabet en langue des signes américaine à l'aide de Resnet50V2
 
 ## Contexte
-Nous constatons que l'intelligence artificielle existe pour aider à résoudre des problèmes, pourtant elle est aussi connue pour être biaisée contre les personnes marginalisées comme les malentendantes. C'est pourquoi dans ce projet, nous avons developpé un programme en utilisant **Resnet (réseau neuronal artificiel qui permet de résoudre le problème de disparition du gradient.) pour transcrire la langue des signes americaine en langue ecrite.
+Nous constatons que l'intelligence artificielle existe pour aider à résoudre des problèmes, pourtant elle est aussi connue pour être biaisée contre les personnes marginalisées comme les malentendantes. C'est pourquoi dans ce projet, nous avons developpé un programme en utilisant **Resnet** (réseau neuronal artificiel qui permet de résoudre le problème de disparition du gradient.) pour transcrire la langue des signes americaine en langue ecrite.
 
 ## Objectifs
 - Développer un modèle d'apprentissage automatique pour transcrire les signaux manuels des alphabets avec un haut niveau d'adaptabilité à divers endroits;
@@ -21,7 +21,7 @@ Nous avons développé notre modèle avec **python** en utilisant la bibliothèq
 - Tensorflow, Keras, OpenCV
 
 ## Résultats
-Après avoir formé les modèles, nous obtenues les résultats suivants.
+Après avoir formé les modèles, nous avons obtenu les résultats suivants.
 
 ### Entrainement à partir de Zero
 <img src = "./figure/zero-precision.png"/>
