@@ -1,4 +1,4 @@
-# Reconnaissance de l'alphabet en langue des signes américaine a l'aide de Resnet50V2
+# Reconnaissance de l'alphabet en langue des signes américaine à l'aide de Resnet50V2
 
 ## Contexte
 Nous constatons que l'intelligence artificielle existe pour aider à résoudre des problèmes, pourtant elle est aussi connue pour être biaisée contre les personnes marginalisées comme les malentendantes. C'est pourquoi dans ce projet, nous avons developpé un programme en utilisant **Resnet (réseau neuronal artificiel qui permet de résoudre le problème de disparition du gradient.) pour transcrire la langue des signes americaine en langue ecrite.
