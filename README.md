@@ -12,7 +12,7 @@ Nous constatons que l'intelligence artificielle existe pour aider à résoudre d
 Nous avons développé notre modèle avec **python** en utilisant la bibliothèque **Keras** et démontrer en temps réel avec **OpenCv.**
 - **Dataset**
 Les données utilisés proviennent de [Kaggle](https://www.kaggle.com/datasets/grassknoted/asl-alphabet), ce sont **87 000** images de taille **200 x 200** que nous avons redimensionnées à (64 x 64) pour un compromis avec la puissance de calcul que l'on dispose.
-<img href = "./figure/dataset.jpg"/>
+<img src = "./figure/dataset.jpg"/>
 - **Modeles**
 Nous avons utilisé l'implementation du Resnet50V2 pour former notre modèle à partir de Zéro sur le dataset, puis nous l'avons comparée au modèle préformé à adapter à notre tâche ( apprentissage par transfert).
 
