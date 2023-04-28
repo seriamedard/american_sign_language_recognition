@@ -11,12 +11,10 @@ Nous constatons que l'intelligence artificielle existe pour aider à résoudre d
 ## Méthodologie
 Nous avons développé notre modèle avec **python** en utilisant la bibliothèque **Keras** et démontrer en temps réel avec **OpenCv.**
 
-- **Dataset**
-Les données utilisés proviennent de [Kaggle](https://www.kaggle.com/datasets/grassknoted/asl-alphabet), ce sont **87 000** images de taille **200 x 200** que nous avons redimensionnées à (64 x 64) pour un compromis avec la puissance de calcul que l'on dispose.
+- **Dataset** : Les données utilisés proviennent de [Kaggle](https://www.kaggle.com/datasets/grassknoted/asl-alphabet), ce sont **87 000** images de taille **200 x 200** que nous avons redimensionnées à (64 x 64) pour un compromis avec la puissance de calcul que l'on dispose.
 <img src = "./figure/dataset.jpg"/>
 
-- **modèle**
-Nous avons utilisé l'implementation du Resnet50V2 pour former notre modèle à partir de Zéro sur le dataset, puis nous l'avons comparée au modèle préformé à adapter à notre tâche (apprentissage par transfert).
+- **modèle** : Nous avons utilisé l'implementation du Resnet50V2 pour former notre modèle à partir de Zéro sur le dataset, puis nous l'avons comparée au modèle préformé à adapter à notre tâche (apprentissage par transfert).
 
 ### Pile de technologie
 - Python, notebook
@@ -27,11 +25,13 @@ Après avoir formé les modèles, nous obtenues les résultats suivants.
 
 ### Entrainement à partir de Zero
 <img src = "./figure/zero-precision.png"/>
+
 Nous avons obtenu un **f1-score** de **92 %** sur 50 epochs, en entrainant notre modèle à partir de zéro.
 
 ### Apprentissage par transfert
 <img src = "./figure/tr-precision.png"/>
 Nous observons une croissance exponentielle de la précision au début de la formation puis elle se stabilise à partir du 8e epoch, le modèle a donc bien appris.
+
 Nous avons obtenu globalement un **f1-score** de **97 %** . Nous acceptons ce modele car sa performance est grandement significative ( > **95 %**)
 Il est donc évident qu'utiliser l'apprentissage par transfert présente des avantages en gain de temps et l'amélioration de la performance.
 
