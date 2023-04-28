@@ -1,26 +1,28 @@
-# Reconnaisance de l'alphabet en langue des signes americaines a l'aide de Resnet50V2
+# Reconnaissance de l'alphabet en langue des signes américaine a l'aide de Resnet50V2
 
 ## Contexte
-Nous constatons que l'intelligence artificielle existe pour aider a resoudre des problemes, pourtant elle est aussi connue pour etre biaise contre les personnes marginalisees comme les malentendantes. C'est pourquoi dans ce projet, nous avons developpe un programme en utulisant **Resnet** (reseau neuronal artificiel qui permet de resoudre le probleme de disparition du gradient.) pour transcrire la langue des signes americaines en langue ecrite.
+Nous constatons que l'intelligence artificielle existe pour aider à résoudre des problèmes, pourtant elle est aussi connue pour être biaisée contre les personnes marginalisées comme les malentendantes. C'est pourquoi dans ce projet, nous avons developpé un programme en utilisant **Resnet (réseau neuronal artificiel qui permet de résoudre le problème de disparition du gradient.) pour transcrire la langue des signes americaine en langue ecrite.
 
 ## Objectifs
-- Developper un modele d'apprentissage automatique pour transcrire les signaux manuels des alphabets avec un haut niveau d'adabtabilite a divers endroits;
-- Obtenir une performance globale permettant la prediction en temps reel et qui distingue les gestes similaires tels que "A" avec "E", "M" et "S";
-- Comparer l'apprentissage a partir de Zero et l'apprentissage par transfert
+- Développer un modèle d'apprentissage automatique pour transcrire les signaux manuels des alphabets avec un haut niveau d'adaptabilité à divers endroits;
+- Obtenir une performance globale permettant la prediction en temps réel et qui distingue les gestes similaires tels que "A" avec "E", "M" et "S";
+- Comparer l'apprentissage à partir de Zéro et l'apprentissage par transfert.
 
 ## Methodologie
-Nous avons developper notre modele avec *python* en utilisant la bibliotheque *Keras* et demontrer en temps reel avec *OpenCV*.
+Nous avons développé notre modèle avec **python** en utilisant la bibliothèque **Keras** et démontrer en temps réel avec **OpenCv.**
 - **Dataset**
-Les donnees utulisees proviennent de [Kaggle](https://www.kaggle.com/datasets/grassknoted/asl-alphabet), ce sont **87 000** images de taille **200 x 200** que nous avons redimentionnees a (64 x 64) pour un compromis avec la puissance de calcul que l'on dispose.
-
+Les données utilisés proviennent de [Kaggle](https://www.kaggle.com/datasets/grassknoted/asl-alphabet), ce sont **87 000** images de taille **200 x 200** que nous avons redimensionnées à (64 x 64) pour un compromis avec la puissance de calcul que l'on dispose.
+<img href = "./figure/dataset.jpg"/>
 - **Modeles**
-Nous avons utilise l'implementation du Resnet50V2 pour former notre modele a partir de Zero sur le dataset, puis nous l'avons comparee au modele preforme a adapter a notre tache ( apprentissage par transfert)
+Nous avons utilisé l'implementation du Resnet50V2 pour former notre modèle à partir de Zéro sur le dataset, puis nous l'avons comparée au modèle préformé à adapter à notre tâche ( apprentissage par transfert).
+
 ### Pile de technologie
 - Python, notebook
 - Tensorflow, Keras, OpenCV
 
 ## Resultats
-Apres avoir forme les modeles , nous obtenues les resultats suivants. 
+Après avoir formé les modèles, nous obtenues les résultats suivants.
+
 ### Entrainement a partir de Zero
 ### Apprentissage par transfert
 Nous observons une croissance exponentielle de la precision au debut de la formation puis elle se stabilise du 8e epochs, le modele a donc bien appris.
